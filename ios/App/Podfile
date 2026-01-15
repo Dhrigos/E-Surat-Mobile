@@ -4,6 +4,12 @@ platform :ios, '13.0'
 use_frameworks!
 
 target 'App' do
-  capacitor_pods
+  pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
+  pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
+  
   # Add your pods here
+end
+
+post_install do |installer|
+  assertDeploymentTarget(installer)
 end
