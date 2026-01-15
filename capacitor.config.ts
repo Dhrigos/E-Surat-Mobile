@@ -4,6 +4,7 @@ const config: CapacitorConfig = {
   appId: 'io.bacadnas.app',
   appName: 'E-Surat | Bacadnas',
   webDir: 'dist',
+  appendUserAgent: ' e-surat',
   server: {
     // url: 'https://bacadnas.com', // Commented out to load local app first
     cleartext: true,
@@ -12,7 +13,6 @@ const config: CapacitorConfig = {
       'bacadnas.com',
       '*.bacadnas.com'
     ],
-    appendUserAgent: ' e-surat',
     // Add custom header to identify app requests
     headers: {
       'X-Capacitor-App': 'true'
