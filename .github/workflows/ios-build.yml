@@ -27,10 +27,19 @@ jobs:
       - name: Build Web Assets
         run: npm run build
 
-      - name: Add & Sync Capacitor
+      - name: Add Capacitor iOS
         run: |
-          npx cap add ios || true
-          npx cap sync ios
+          if [ ! -d "ios" ]; then
+            npx cap add ios
+          fi
+
+      - name: Sync Capacitor
+        run: npx cap sync ios
+
+      - name: Install Pods (Generate Workspace)
+        run: |
+          cd ios/App
+          pod install
 
       # BAGIAN INI YANG SAYA UBAH TOTAL
       - name: Build for Simulator (Debug)
