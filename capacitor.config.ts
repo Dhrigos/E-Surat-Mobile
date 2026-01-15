@@ -12,6 +12,7 @@ const config: CapacitorConfig = {
       'bacadnas.com',
       '*.bacadnas.com'
     ],
+    appendUserAgent: ' e-surat',
     // Add custom header to identify app requests
     headers: {
       'X-Capacitor-App': 'true'
