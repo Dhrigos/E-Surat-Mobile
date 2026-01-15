@@ -51,7 +51,8 @@ jobs:
             -configuration Debug \
             -destination 'platform=iOS Simulator,name=iPhone 16' \
             -derivedDataPath build \
-            -xcconfig "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"
+            PODS_ROOT="$PWD/Pods" \
+            PODS_PODFILE_DIR_PATH="$PWD"
 
       # Appetize butuh file .app yang di-zip
       - name: Zip App for Appetize
