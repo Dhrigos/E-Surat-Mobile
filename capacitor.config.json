@@ -1,6 +1,6 @@
 {
     "appId": "io.bacadnas.app",
-    "appName": "E-Surat | Bacadnas",
+    "appName": "Sistem Manajemen Dokumen",
     "webDir": "dist",
     "appendUserAgent": " e-surat",
     "server": {

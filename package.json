@@ -10,7 +10,7 @@
     "test.e2e": "cypress run",
     "test.unit": "vitest",
     "lint": "eslint",
-    "resources": "capacitor-assets generate --iconBackgroundColor '#ffffff' --splashBackgroundColor '#ffffff'"
+    "resources": "capacitor-assets generate --iconBackgroundColor '#262626' --splashBackgroundColor '#262626'"
   },
   "dependencies": {
     "@capacitor-community/privacy-screen": "^6.0.0",
