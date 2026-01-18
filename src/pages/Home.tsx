@@ -21,22 +21,22 @@ const Home: React.FC = () => {
           alignItems: 'center',
           justifyContent: 'center',
           height: '100%',
-          background: '#ffffff'
+          background: 'var(--ion-background-color)'
         }}>
           <div className="logo-circle" style={{ marginBottom: '20px' }}>
             <img src="/BADAN-CADANGAN-NASIONAL.png" alt="Logo" style={{ width: '80px', height: '80px', objectFit: 'contain' }} />
           </div>
-          <IonSpinner name="crescent" color="danger" style={{ transform: 'scale(1.5)', marginBottom: '20px' }} />
+          <IonSpinner name="crescent" color="primary" style={{ transform: 'scale(1.5)', marginBottom: '20px' }} />
           <h2 style={{
             fontSize: '18px',
             fontWeight: '600',
-            color: '#374151',
+            color: 'var(--ion-text-color)',
             fontFamily: 'Inter, sans-serif'
           }}>
             Menghubungkan ke Sistem...
           </h2>
           <p style={{
-            color: '#6b7280',
+            color: 'var(--ion-color-medium)',
             fontSize: '14px',
             marginTop: '8px'
           }}>

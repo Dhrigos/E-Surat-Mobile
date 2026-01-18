@@ -4,9 +4,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1a1a1a;
+    background-color: var(--ion-background-color);
     /* Dark background */
-    background: radial-gradient(circle at center, #2c2c2c 0%, #111111 100%);
+    background: radial-gradient(circle at center, var(--ion-background-color) 0%, var(--ion-color-step-950, #000) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +141,7 @@
 .sub-title {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #ff3333;
+    color: var(--ion-color-primary);
     /* Red accent */
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -152,7 +152,7 @@
 .separator-line {
     width: 60px;
     height: 4px;
-    background: #ff3333;
+    background: var(--ion-color-primary);
     margin: 1rem 0;
     border-radius: 2px;
 }
@@ -166,8 +166,8 @@
 
 .access-button {
     margin-top: 2rem;
-    background: rgba(255, 51, 51, 0.1);
-    border: 1px solid #ff3333;
+    background: rgba(var(--ion-color-primary-rgb), 0.1);
+    border: 1px solid var(--ion-color-primary);
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 50px;
@@ -180,12 +180,12 @@
     gap: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(255, 51, 51, 0.2);
+    box-shadow: 0 4px 15px rgba(var(--ion-color-primary-rgb), 0.2);
 }
 
 .access-button:hover {
-    background: #ff3333;
-    box-shadow: 0 6px 20px rgba(255, 51, 51, 0.4);
+    background: var(--ion-color-primary);
+    box-shadow: 0 6px 20px rgba(var(--ion-color-primary-rgb), 0.4);
     transform: translateY(-2px);
 }
 

@@ -2,7 +2,7 @@
 .onboarding-container {
     width: 100%;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: var(--ion-background-color);
     position: relative;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -20,7 +20,7 @@
     height: 100%;
     padding: 3rem 2rem;
     box-sizing: border-box;
-    background: #ffffff;
+    background: var(--ion-background-color);
 }
 
 /* Animations */
@@ -44,7 +44,7 @@
 .logo-circle {
     width: 100px;
     height: 100px;
-    background: #fff;
+    background: var(--ion-color-dark);
     border-radius: 50%;
     padding: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -57,7 +57,7 @@
 .wizard-title {
     font-size: 28px;
     font-weight: 800;
-    color: #111827;
+    color: var(--ion-text-color);
     margin: 0;
     margin-bottom: 0.5rem;
     text-align: center;
@@ -70,7 +70,7 @@
 
 .wizard-subtitle {
     font-size: 16px;
-    color: #6b7280;
+    color: var(--ion-color-medium);
     text-align: center;
     margin: 0;
     line-height: 1.5;
@@ -90,17 +90,17 @@
 .feature-item {
     display: flex;
     align-items: center;
-    background: #f9fafb;
+    background: var(--ion-color-dark);
     padding: 1rem;
     border-radius: 16px;
     margin-bottom: 1rem;
-    border: 1px solid #f3f4f6;
+    border: 1px solid var(--ion-color-medium);
 }
 
 .feature-icon {
     font-size: 24px;
     margin-right: 1rem;
-    background: #fff;
+    background: var(--ion-color-light);
     width: 48px;
     height: 48px;
     display: flex;
@@ -114,12 +114,12 @@
     font-size: 16px;
     font-weight: 700;
     margin: 0 0 4px 0;
-    color: #374151;
+    color: var(--ion-text-color);
 }
 
 .feature-text p {
     font-size: 14px;
-    color: #9ca3af;
+    color: var(--ion-color-medium);
     margin: 0;
 }
 
@@ -135,8 +135,8 @@
 .permission-item {
     display: flex;
     align-items: center;
-    background: #fff;
-    border: 1px solid #e5e7eb;
+    background: var(--ion-color-dark);
+    border: 1px solid var(--ion-color-medium);
     border-radius: 16px;
     padding: 1rem;
     position: relative;
@@ -146,7 +146,7 @@
 
 .permission-item:active {
     transform: scale(0.98);
-    background: #f9fafb;
+    background: var(--ion-color-medium);
 }
 
 .status-dot {
@@ -160,8 +160,8 @@
 }
 
 .status-dot.active {
-    background: #10b981;
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+    background: var(--ion-color-success);
+    box-shadow: 0 0 0 4px rgba(var(--ion-color-success-rgb), 0.2);
 }
 
 .perm-icon {
@@ -177,12 +177,12 @@
     font-size: 16px;
     font-weight: 600;
     margin: 0;
-    color: #1f2937;
+    color: var(--ion-text-color);
 }
 
 .perm-content p {
     font-size: 13px;
-    color: #6b7280;
+    color: var(--ion-color-medium);
     margin: 4px 0 0 0;
 }
 
@@ -192,14 +192,14 @@
     padding: 6px 12px;
     border-radius: 20px;
     border: none;
-    background: #eff6ff;
-    color: #2563eb;
+    background: rgba(var(--ion-color-tertiary-rgb), 0.1);
+    color: var(--ion-color-tertiary);
     transition: all 0.3s;
 }
 
 .perm-btn.granted {
-    background: #ecfdf5;
-    color: #10b981;
+    background: rgba(var(--ion-color-success-rgb), 0.1);
+    color: var(--ion-color-success);
 }
 
 /* Success Step */
@@ -269,7 +269,7 @@
 
 .id-body strong {
     font-size: 24px;
-    color: #10b981;
+    color: var(--ion-color-success);
     /* Green for Online */
     margin-top: 5px;
 }
@@ -292,21 +292,21 @@
 }
 
 .wizard-button.primary {
-    background: #111827;
+    background: var(--ion-color-primary);
     color: #fff;
 }
 
 .wizard-button.primary:active {
-    background: #000;
+    background: var(--ion-color-primary-shade);
     transform: scale(0.98);
 }
 
 .wizard-button.success {
-    background: linear-gradient(135deg, #b91d1d 0%, #991b1b 100%);
+    background: var(--ion-color-success);
     color: #fff;
     font-size: 18px;
     letter-spacing: 1px;
-    box-shadow: 0 10px 30px rgba(185, 29, 29, 0.4);
+    box-shadow: 0 10px 30px rgba(var(--ion-color-success-rgb), 0.4);
 }
 
 .pulse {
@@ -315,15 +315,15 @@
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(185, 29, 29, 0.4);
+        box-shadow: 0 0 0 0 rgba(var(--ion-color-success-rgb), 0.4);
     }
 
     70% {
-        box-shadow: 0 0 0 15px rgba(185, 29, 29, 0);
+        box-shadow: 0 0 0 15px rgba(var(--ion-color-success-rgb), 0);
     }
 
     100% {
-        box-shadow: 0 0 0 0 rgba(185, 29, 29, 0);
+        box-shadow: 0 0 0 0 rgba(var(--ion-color-success-rgb), 0);
     }
 }
 
