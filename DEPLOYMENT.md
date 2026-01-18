@@ -27,6 +27,7 @@ npm run build
 npx cap sync
 ```
 
+s
 This copies the build assets to the native `android/` and `ios/` folders.
 
 ---
