@@ -25,20 +25,20 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
         <div className="logos-container">
           <div className="logo-wrapper">
             <img
-              src="/BADAN-CADANGAN-NASIONAL.png"
-              alt="Badan Cadangan Nasional"
-              className="logo"
-            />
-            <span className="logo-text">BADAN CADANGAN NASIONAL</span>
-          </div>
-          <div className="divider"></div>
-          <div className="logo-wrapper">
-            <img
               src="/KEMENTERIAN-PERTAHANAN.png"
               alt="Kementerian Pertahanan"
               className="logo"
             />
             <span className="logo-text">KEMENTERIAN PERTAHANAN</span>
+          </div>
+          <div className="divider"></div>
+          <div className="logo-wrapper">
+            <img
+              src="/BADAN-CADANGAN-NASIONAL.png"
+              alt="Badan Cadangan Nasional"
+              className="logo"
+            />
+            <span className="logo-text">BADAN CADANGAN NASIONAL</span>
           </div>
         </div>
 
