@@ -97,8 +97,8 @@
 }
 
 .logo-larger {
-    width: 115px;
-    height: 115px;
+    width: 130px;
+    height: 130px;
 }
 
 .logo-text {
@@ -237,9 +237,9 @@
     }
 
     .logo-larger {
-        width: 92px;
-        /* ~15% larger */
-        height: 92px;
+        width: 105px;
+        /* Further increased */
+        height: 105px;
     }
 
     .logo-wrapper {
