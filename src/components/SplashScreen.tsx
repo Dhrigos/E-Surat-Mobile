@@ -27,7 +27,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onFinish }) => {
             <img
               src="/KEMENTERIAN-PERTAHANAN.png"
               alt="Kementerian Pertahanan"
-              className="logo"
+              className="logo logo-larger"
             />
             <span className="logo-text">KEMENTERIAN PERTAHANAN</span>
           </div>
