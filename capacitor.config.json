@@ -7,8 +7,8 @@
         "cleartext": true,
         "androidScheme": "https",
         "allowNavigation": [
-            "bacadnas.com",
-            "*.bacadnas.com"
+            "komcad.id",
+            "*.komcad.id"
         ],
         "headers": {
             "X-Capacitor-App": "true"

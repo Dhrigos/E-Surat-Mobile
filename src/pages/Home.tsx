@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   useEffect(() => {
     // Give a small delay for the spinner to be seen, then redirect
     const timer = setTimeout(() => {
-      window.location.href = 'https://bacadnas.com';
+      window.location.href = 'https://komcad.id/login';
     }, 1500);
 
     return () => clearTimeout(timer);
